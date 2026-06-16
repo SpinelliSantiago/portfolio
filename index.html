@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="Assets/logo.png">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Portfolio Santiago Spinelli </title>
+</head>
+<body>
+
+<!--------NAV--------->
+    <nav>
+        <div class="logo">
+            <h2>
+                <i class="ri-code-s-slash-fill"></i>
+                Santiago
+            </h2>
+        </div>
+
+        <button id="menu-btn">
+            <i class="ri-menu-5-line"></i>
+        </button>
+
+        <ul class="nav_links" id="nav-links">
+            <li>
+                <i class="ri-home-4-line"></i>
+                <a href="#start">INICIO</a>
+            </li>
+            <li>
+                <i class="ri-user-3-line"></i>
+                <a href="#about-me">SOBRE MI</a>
+            </li>
+            <li>
+                <i class="ri-folder-6-line"></i>
+                <a href="#projects">PROYECTOS</a>
+            </li>
+            <li>
+                <i class="ri-mail-line"></i>
+                <a href="#contact">CONTACTO</a>
+            </li>
+            <li>
+                <button class="cv_btn">
+                    Descargar CV
+                    <i class="ri-download-2-line"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <!--------HEADER--------->
+    <main>
+        <header>
+            <div class="header_image" id="start">
+                <img src="assets/header_img.png" alt="header" />
+            </div>
+
+            <div class="header_content">
+                <h3>Hola! Soy</h3>
+                <h1>Santiago</h1>
+                <h2>Frontend Developer</h2>
+                <p>
+                    Profesional con experiencia en hospitalidad a nivel internacional y en entornos multiculturales. Actualmente me encuentro perfeccionando mis conocimientos en <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">JavaScript</span> y <span class="highlight">SQL</span>, con el objetivo de construir aplicaciones modernas, funcionales y bien diseñadas.
+                </p>
+
+                <ul class="header_socials">
+                    <li>
+                        <a href="https://github.com/SpinelliSantiago?tab=repositories" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:Spinelli.spi98@outlook.com">
+                            <i class="ri-mail-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </header>
+
+        <!--------ABOUT ME--------->
+        <section>
+
+            <div class="about_me_caption" id="about-me">
+                <h2>
+                    Sobre mi
+                </h2>
+            </div>
+
+            <div class="about_me">
+
+                <div class="about_me_cards">
+
+                    <div class="about_me_card">
+                        <i class="ri-map-pin-user-fill"></i>
+                        <div class="about_me_text">
+                            <h4>
+                                Buenos Aires, Argentina
+                            </h4>
+                            <p>
+                                Mi lugar, mi base.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about_me_card">
+                        <i class="ri-global-line"></i>
+                        <div class="about_me_text">
+                            <h4>
+                                Experiencia internacional
+                            </h4>
+                            <p>
+                                Trabaje en Arabia Saudita en entornos multiculturales de alto nivel.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about_me_card">
+                        <i class="ri-translate"></i>
+                        <div class="about_me_text">
+                            <h4>
+                                Inglés B2
+                            </h4>
+                            <p>
+                                Comunicación efectiva en contextos internacionales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about_me_card">
+                        <i class="ri-code-box-line"></i>
+                        <div class="about_me_text">
+                            <h4>
+                                En constante aprendizaje
+                            </h4>
+                            <p>
+                                Siempre buscando mejorar y aprender nuevas tecnologias.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="about_me_description">
+                    <p>
+                        Soy un profesional argentino con experiencia en <span class="highlight">hospitalidad internacional</span> y atención al cliente en entornos multiculturales. Durante mi trayectoria trabajé en <span class="highlight">Arabia Saudita</span>, participando en operaciones de alto nivel que me permitieron desarrollar habilidades de <span class="highlight">adaptación</span>, <span class="highlight">comunicación</span> y <span class="highlight">resolución de problemas</span> bajo estándares exigentes.
+                    </p>
+
+                    <p>
+                        Actualmente me encuentro orientando mi carrera hacia el <span class="highlight">desarrollo web</span>, 
+                        una disciplina que siempre despertó mi interés y que hoy representa mi principal objetivo profesional. Me encuentro perfeccionando mis conocimientos en <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">JavaScript</span> 
+                        y <span class="highlight">SQL</span>, con el propósito de crear aplicaciones modernas, funcionales y enfocadas en la experiencia del usuario.
+                    </p>
+
+                    <p>
+                        Además, cuento con <span class="highlight">nivel B2 de inglés</span>, lo que me permite desenvolverme en contextos internacionales y acceder a <span class="highlight">documentación y recursos técnicos</span> de manera fluida.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    <!--------CARDS--------->
+        <section>
+            <div class="skills_caption">
+                <h2>
+                    Mis habilidades
+                </h2>
+            </div>
+
+            <div class="skills">
+                    <div class="cards">
+                        <img src="Assets/Icon/html.png">
+                        <h4>HTML</h4>
+                        <p>Estructura de páginas web y semántica.</p>
+                    </div>
+
+                    <div class="cards">
+                        <img src="Assets/Icon/css.png">
+                        <h4>CSS</h4>
+                        <p>Estilos modernos, responsivo y diseños UI.</p>
+                    </div>
+
+                    <div class="cards">
+                        <img src="Assets/Icon/js.png">
+                        <h4>Javascript</h4>
+                        <p>Interactividad, lógica y manipulación del DOM.</p>
+                    </div>
+
+                    <div class="cards">
+                        <img src="Assets/Icon/sql.png">
+                        <h4>SQL</h4>
+                        <p>Consultas, bases de datos y modelado relacional.</p>
+                    </div>
+            </div>
+        </section>
+
+    <!--------projects--------->
+        <section>
+            <div class="projects_caption" id="projects">
+                <h2>
+                    Mis proyectos
+                </h2>
+            </div>
+
+            <div class="projects">
+                <div class="project">
+                    <img src="assets/projects/fuerza-bruta.lp.png">
+                    <div class="project_text">
+                        <h4>Landing Page / Fuerza Bruta</h4>
+                        <p>Estructura de páginas web y semántica.</p>
+                        <a href="https://fuerza-bruta-landing-page.vercel.app/" target="_blank" class="project_btn">
+                            Ver proyecto
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="assets/projects/todo.png">
+                    <div class="project_text">
+                        <h4>Lista de Tareas</h4>
+                        <p>App para gestionar tareas con storage.</p>
+                        <a href="https://todo-list-silk-delta.vercel.app" target="_blank" class="project_btn">
+                            Ver proyecto
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="assets/projects/stopwatch.png">
+                    <div class="project_text">
+                        <h4>Cronometro</h4>
+                        <p>Interactividad, lógica y manipulación del DOM.</p>
+                        <a href="https://stopwatch-app-mu-two.vercel.app" target="_blank" class="project_btn">
+                            Ver proyecto
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="assets/projects/ecommerce.png">
+                    <div class="project_text">
+                        <h4>E-Commerce / Page & Lantern</h4>
+                        <p>Responsive, localStorage y carrito de compras.</p>
+                        <a href="https://bookstore-ecommerce-lac.vercel.app/" target="_blank" class="project_btn">
+                            Ver proyecto
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-----------FOOTER------------>
+    <footer>
+
+        <div class="prefooter">
+
+            <div class="footer_logo">
+                <div class="footer_i">
+                    <i class="ri-code-s-slash-fill"></i>
+                </div>
+                
+                <div class="footer_logo_text">
+                    <h5>
+                        Santiago
+                    </h5>
+                    <h6>
+                        Frontend Developer
+                    </h6>
+                </div>
+            </div>
+
+            <div class="footer_nav">
+                <h5>
+                    Enlaces
+                </h5>
+                <ul class="footer_links">
+                    <li>
+                        <span class="highlight">></span>
+                        <a href="#start">Inicio</a>
+                    </li>
+                    <li>
+                        <span class="highlight">></span>
+                        <a href="#about-me">Sobre mi</a>
+                    </li>
+                    <li>
+                        <span class="highlight">></span>
+                        <a href="#projects">Proyectos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_contact" id="contact">
+                <h5>
+                    Contacto
+                </h5>
+                <ul class="footer_socials">
+                    <li>
+                        <a href="#">
+                            <i class="ri-global-line"></i>
+                            Buenos Aires, Argentina
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:Spinelli.spi98@outlook.com">
+                            <i class="ri-mail-line"></i>
+                            Spinelli.spi98@outlook.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/SpinelliSantiago?tab=repositories" target="_blank">
+                            <i class="ri-github-fill"></i>
+                            Santiago Spinelli
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_text">
+            <p> © 2026 Santiago. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

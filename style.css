@@ -241,7 +241,7 @@ header{
 }
 
 .about_me_card h4, .about_me_card i{
-    font-size: 20px;
+    font-size: 22px;
     color: var(--primary-color);
 }
 
@@ -303,15 +303,15 @@ header{
 }
 
 .skills{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
     margin: auto;
+    width: 65%;
+    gap: 25px;
     margin-bottom: 80px;
-    display: flex;
-    padding: 50px;
-    max-width: 1900px;
 }
 
 .cards h4{
-    font-size: 20px;
     margin: 20px 0;
     font-size: 20px;
     font-weight: bold;
@@ -319,7 +319,7 @@ header{
 }
 
 .cards p{
-    font-size: 16px;
+    font-size: 17px;
     margin: 0 20px;
     line-height: 22px;
     color: var(--white);
@@ -329,14 +329,13 @@ header{
     text-align: center;
     border-radius: 12px;
     padding: 60px 20px;
-    margin: 0 10px;
     box-shadow: 0 0 8px #9afa802e;
     background: #10170a;
     transition: 0.2s;
 }
 
 .cards img{
-    margin: 20px 0;
+    margin: 10px 0;
     max-width: 110px;
 }
 
@@ -658,8 +657,8 @@ header img{
 }
 
 .cards{
-    width: 80%;
-    margin: 12px auto;
+    width: 90%;
+    margin: auto;
 }
 
 .about_me_caption h2{
@@ -794,7 +793,7 @@ nav button{
 
 .skills{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 90%;
     margin: auto;
     padding: 0;
@@ -804,9 +803,8 @@ nav button{
     font-size: 40px;
 }
 
-.cards{
-    width: 350px;
-    margin: 12px auto;
+.cards p{
+    font-size: 18px;
 }
 
 .projects{
@@ -823,7 +821,7 @@ nav button{
 
 header {
     grid-template-columns: repeat(2, 1fr);
-    padding: 180px 0 40px 0;
+    padding: 160px 0 40px 0;
 }
 
 .header_content {

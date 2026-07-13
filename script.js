@@ -9,7 +9,7 @@ const cvBtn = document.querySelector(".cv_btn");
 
 cvBtn.addEventListener("click", () => {
     const link = document.createElement("a");
-    link.href = "assets/Santiago Spinelli CV.pdf";
-    link.download = "Santiago Spinelli CV.pdf";
+    link.href = "assets/Santiago Spinelli RESUME.pdf";
+    link.download = "Santiago Spinelli RESUME.pdf";
     link.click();
 });

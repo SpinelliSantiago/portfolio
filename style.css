@@ -297,7 +297,6 @@ header{
 .skills_caption::after{
     content: "";
     display: block;
-    width: 30%;
     height: 3px;
     margin: 10px 0;
     background: var(--primary-color);
@@ -305,10 +304,10 @@ header{
 
 .skills{
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(7, 1fr);
     margin: auto;
-    width: 65%;
-    gap: 25px;
+    width: 95%;
+    gap: 10px;
     margin-bottom: 80px;
 }
 
@@ -320,8 +319,8 @@ header{
 }
 
 .cards p{
-    font-size: 17px;
-    margin: 0 20px;
+    font-size: 16px;
+    margin: 0 8px;
     line-height: 22px;
     color: var(--white);
 }
@@ -329,8 +328,8 @@ header{
 .cards{
     text-align: center;
     border-radius: 12px;
-    padding: 60px 20px;
-    box-shadow: 0 0 8px #9afa802e;
+    padding: 40px 10px;
+    box-shadow: 0 10px 10px -8px #9afa802e;
     background: #10170a;
     transition: 0.2s;
 }
@@ -341,7 +340,8 @@ header{
 }
 
 .cards:hover{
-    box-shadow: 0 0 8px #9afa8083;
+    box-shadow: 0 12px 20px -8px #9afa8083;
+    background: rgb(1, 15, 1);
     transform: translateY( -10px);
 }
 

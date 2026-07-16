@@ -431,6 +431,118 @@ header{
     color: var(--text-dark);
 }
 
+/*---------- FORM ----------*/
+form{
+    display: grid;
+    width: 55%;
+    margin: 0 auto 60px;
+    gap: 10px;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color-darker);
+    background: #000000;
+}
+
+form h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0 40px 0;
+    border-radius: 8px;
+    color: var(--white)
+}
+
+form h2::after{
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    margin: 25px auto 0;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--primary-color-dark),
+        transparent
+    );
+}
+
+form input{
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    font-size: 14px;
+    border: 1px solid var(--primary-color-darker);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--white);
+    transition: 0.1s;
+}
+
+form input:hover{
+    border: 1px solid var(--primary-color-dark);
+}
+
+form input::placeholder{
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-light);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--text-light);
+}
+
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 1000px #000000 inset;
+    -webkit-text-fill-color: white;
+}
+
+form textarea{
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    border: 1px solid var(--primary-color-darker);
+    border-radius: 5px;
+    height: 160px;
+    resize: none;
+    background: transparent;
+    color: var(--white);
+    transition: 0.1s;
+}
+
+form textarea:hover{
+    border: 1px solid var(--primary-color-dark);
+}
+
+form textarea::placeholder{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid var(--text-light);
+}
+
+form button{
+    margin: 30px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    transition: 0.1s;
+}
+
+form button:hover{
+    background: var(--primary-color-dark);
+    color: var(--white);
+}
+
 /*---------FOOTER---------*/
 .prefooter{
     display: flex;
@@ -704,6 +816,20 @@ header img{
 .footer_text{
     text-align: center;
 }
+
+form{
+    width: 90%;
+}
+
+form p{
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.modal_form_content{
+    max-width: 90%;
+    padding: 20px 10px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -812,6 +938,10 @@ nav button{
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 10px;
+}
+
+form{
+    width: 90%;
 }
 }
 

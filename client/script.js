@@ -27,7 +27,7 @@ contactForm.addEventListener("submit", async (event) => {
     const name = document.querySelector("#name").value;
     const email = document.querySelector("#email").value;
     const message = document.querySelector("#message").value;
-    const response = await fetch("http://localhost:3000/contact", {
+    const response = await fetch("https://portfolio-cm1m.onrender.com/contact", {
 
         method: "POST",
 

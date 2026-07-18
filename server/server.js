@@ -38,6 +38,7 @@ app.post("/contact", async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log("Yeah this is working!!!");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });

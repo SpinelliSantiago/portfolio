@@ -9,6 +9,7 @@
     />
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link href="style.css" rel="stylesheet">
+    <script src="translation.js" defer></script>
     <script src="script.js" defer></script>
     <title>Portfolio Santiago Spinelli </title>
 </head>
@@ -30,22 +31,28 @@
         <ul class="nav_links" id="nav-links">
             <li>
                 <i class="ri-home-4-line"></i>
-                <a href="#start">HOME</a>
+                <a href="#start" data-i18n="nav_home">HOME</a>
             </li>
             <li>
                 <i class="ri-user-3-line"></i>
-                <a href="#about-me">ABOUT ME</a>
+                <a href="#about-me" data-i18n="nav_about">ABOUT ME</a>
             </li>
             <li>
                 <i class="ri-folder-6-line"></i>
-                <a href="#projects">PROJECTS</a>
+                <a href="#projects" data-i18n="nav_projects">PROJECTS</a>
             </li>
             <li>
                 <i class="ri-mail-line"></i>
-                <a href="#contact">CONTACT</a>
+                <a href="#contact" data-i18n="nav_contact">CONTACT</a>
             </li>
             <li>
-                <button class="cv_btn">
+                <button id="lang-toggle" class="lang_btn">
+                    <i class="ri-translate"></i>
+                    <span id="lang-toggle-text">EN</span>
+                </button>
+            </li>
+            <li>
+                <button class="cv_btn" data-i18n="nav_cv">
                     Download RESUME
                     <i class="ri-download-2-line"></i>
                 </button>
@@ -61,10 +68,10 @@
             </div>
 
             <div class="header_content">
-                <h3>Hi! I'm</h3>
+                <h3 data-i18n="greeting">Hi! I'm</h3>
                 <h1>Santiago</h1>
-                <h2>Frontend Developer</h2>
-                <p>
+                <h2 data-i18n="role">Frontend Developer</h2>
+                <p data-i18n="header_description">
                     Professional with experience in international hospitality and multicultural environments. I am currently honing my skills in <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">JavaScript</span>, <span class="highlight">React</span>, <span class="highlight">Node.js</span> and <span class="highlight">SQL</span>, with the goal of building modern, functional, and well-designed applications.
                 </p>
 
@@ -88,7 +95,7 @@
         <section>
 
             <div class="about_me_caption" id="about-me">
-                <h2>
+                <h2 data-i18n="about_title">
                     About me
                 </h2>
             </div>
@@ -103,7 +110,7 @@
                             <h4>
                                 Buenos Aires, Argentina
                             </h4>
-                            <p>
+                            <p data-i18n="about_card1_text">
                                 My place, my home base.
                             </p>
                         </div>
@@ -112,10 +119,10 @@
                     <div class="about_me_card">
                         <i class="ri-global-line"></i>
                         <div class="about_me_text">
-                            <h4>
+                            <h4 data-i18n="about_card2_title">
                                 International experience
                             </h4>
-                            <p>
+                            <p data-i18n="about_card2_text">
                                 I worked in Saudi Arabia in high-level multicultural environments.
                             </p>
                         </div>
@@ -124,10 +131,10 @@
                     <div class="about_me_card">
                         <i class="ri-translate"></i>
                         <div class="about_me_text">
-                            <h4>
+                            <h4 data-i18n="about_card3_title">
                                 English B2
                             </h4>
-                            <p>
+                            <p data-i18n="about_card3_text">
                                 Effective communication in international contexts.
                             </p>
                         </div>
@@ -136,10 +143,10 @@
                     <div class="about_me_card">
                         <i class="ri-code-box-line"></i>
                         <div class="about_me_text">
-                            <h4>
+                            <h4 data-i18n="about_card4_title">
                                 Always learning
                             </h4>
-                            <p>
+                            <p data-i18n="about_card4_text">
                                 Always looking to improve and learn new technologies.
                             </p>
                         </div>
@@ -148,16 +155,16 @@
                 </div>
 
                 <div class="about_me_description">
-                    <p>
+                    <p data-i18n="about_desc_1">
                         I'm an Argentine professional with experience in <span class="highlight">international hospitality</span> and customer service in multicultural environments. Throughout my career I worked in <span class="highlight">Saudi Arabia</span>, taking part in high-level operations that helped me develop skills in <span class="highlight">adaptability</span>, <span class="highlight">communication</span>, and <span class="highlight">problem-solving</span> under demanding standards.
                     </p>
 
-                    <p>
+                    <p data-i18n="about_desc_2">
                         I am currently steering my career toward <span class="highlight">web development</span>, 
                         a field that has always interested me and now represents my main professional goal. I am honing my skills in <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">JavaScript</span>, <span class="highlight">React</span>, <span class="highlight">Node.js</span> and <span class="highlight">SQL</span>, with the aim of building modern, functional applications focused on user experience.
                     </p>
 
-                    <p>
+                    <p data-i18n="about_desc_3">
                         I also have <span class="highlight">B2 level English</span>, which allows me to work comfortably in international settings and access <span class="highlight">technical documentation and resources</span> fluently.
                     </p>
                 </div>
@@ -168,7 +175,7 @@
     <!--------CARDS--------->
         <section>
             <div class="skills_caption">
-                <h2>
+                <h2 data-i18n="skills_title">
                     My skills
                 </h2>
             </div>
@@ -177,43 +184,43 @@
                     <div class="cards">
                         <img src="assets/icon/html.png">
                         <h4>HTML</h4>
-                        <p>Web page structure and semantics.</p>
+                        <p data-i18n="skill_html_desc">Web page structure and semantics.</p>
                     </div>
 
                     <div class="cards">
                         <img src="assets/icon/css.png">
                         <h4>CSS</h4>
-                        <p>Modern styling, responsive design, and UI layouts.</p>
+                        <p data-i18n="skill_css_desc">Modern styling, responsive design, and UI layouts.</p>
                     </div>
 
                     <div class="cards">
                         <img src="assets/icon/js.png">
                         <h4>Javascript</h4>
-                        <p>Interactivity, logic, and DOM manipulation.</p>
+                        <p data-i18n="skill_js_desc">Interactivity, logic, and DOM manipulation.</p>
                     </div>
 
                     <div class="cards">
                         <img src="assets/icon/react.png">
                         <h4>React</h4>
-                        <p>Building reusable components and dynamic user interfaces.</p>
+                        <p data-i18n="skill_react_desc">Building reusable components and dynamic user interfaces.</p>
                     </div>
 
                     <div class="cards">
                         <img src="assets/icon/sql.png">
                         <h4>SQL</h4>
-                        <p>Queries, databases, and relational modeling.</p>
+                        <p data-i18n="skill_sql_desc">Queries, databases, and relational modeling.</p>
                     </div>
 
                     <div class="cards">
                         <img src="assets/icon/node.png">
                         <h4>Node.js</h4>
-                        <p>Backend development, APIs, and server-side JavaScript.</p>
+                        <p data-i18n="skill_node_desc">Backend development, APIs, and server-side JavaScript.</p>
                     </div>
 
                     <div class="cards">
                         <img src="assets/icon/express.png">
                         <h4>Express.js</h4>
-                        <p>Building servers and APIs for web applications.</p>
+                        <p data-i18n="skill_express_desc">Building servers and APIs for web applications.</p>
                     </div>
             </div>
         </section>
@@ -221,7 +228,7 @@
     <!--------PROJECTS--------->
         <section>
             <div class="projects_caption" id="projects">
-                <h2>
+                <h2 data-i18n="projects_title">
                     My projects
                 </h2>
             </div>
@@ -230,10 +237,10 @@
                 <div class="project">
                     <img src="assets/projects/fuerza-bruta.lp.png">
                     <div class="project_text">
-                        <h4>Landing Page / Fuerza Bruta</h4>
-                        <p>Web page structure and semantics.</p>
+                        <h4 data-i18n="project1_title">Landing Page / Fuerza Bruta</h4>
+                        <p data-i18n="project1_desc">Web page structure and semantics.</p>
                         <a href="https://fuerza-bruta-landing-page.vercel.app/" target="_blank" class="project_btn">
-                            View project
+                            <span data-i18n="project_btn_view">View project</span>
                             <i class="ri-external-link-line"></i>
                         </a>
                         <a href="https://github.com/SpinelliSantiago/fuerza-bruta-landing-page" target="_blank" class="project_btn">
@@ -246,10 +253,10 @@
                 <div class="project">
                     <img src="assets/projects/todo.png">
                     <div class="project_text">
-                        <h4>Project Manager</h4>
-                        <p>based task manager built with HTML, CSS, JavaScript & Node.js. Features an installable desktop version powered by Electron.</p>
+                        <h4 data-i18n="project2_title">Project Manager</h4>
+                        <p data-i18n="project2_desc">based task manager built with HTML, CSS, JavaScript & Node.js. Features an installable desktop version powered by Electron.</p>
                         <a href="https://project-manager-electron-ocgw-kfs10suf5.vercel.app" target="_blank" class="project_btn">
-                            View project
+                            <span data-i18n="project_btn_view">View project</span>
                             <i class="ri-external-link-line"></i>
                         </a>
                         <a href="https://github.com/SpinelliSantiago/project-manager-electron" target="_blank" class="project_btn">
@@ -257,7 +264,7 @@
                             <i class="ri-github-fill"></i>
                         </a>
                         <a href="https://github.com/SpinelliSantiago/project-manager-electron/releases/tag/v1.0.0" target="_blank" class="project_btn">
-                            Desktop version 
+                            <span data-i18n="project_btn_desktop">Desktop version</span>
                             <i class="ri-github-fill"></i>
                         </a>
                     </div>
@@ -267,9 +274,9 @@
                     <img src="assets/projects/movie-reviews.png">
                     <div class="project_text">
                         <h4>Movie Reviews</h4>
-                        <p>Modern React application showcasing routing, API consumption, and responsive UI design.</p>
+                        <p data-i18n="project3_desc">Modern React application showcasing routing, API consumption, and responsive UI design.</p>
                         <a href="https://movie-reviews-rose.vercel.app/" target="_blank" class="project_btn">
-                            View project
+                            <span data-i18n="project_btn_view">View project</span>
                             <i class="ri-external-link-line"></i>
                         </a>
                         <a href="https://github.com/SpinelliSantiago/movie-reviews" target="_blank" class="project_btn">
@@ -283,9 +290,9 @@
                     <img src="assets/projects/ecommerce.png">
                     <div class="project_text">
                         <h4>E-Commerce / Page & Lantern</h4>
-                        <p>Responsive design, localStorage, and shopping cart.</p>
+                        <p data-i18n="project4_desc">Responsive design, localStorage, and shopping cart.</p>
                         <a href="https://bookstore-ecommerce-lac.vercel.app/" target="_blank" class="project_btn">
-                            View project
+                            <span data-i18n="project_btn_view">View project</span>
                             <i class="ri-external-link-line"></i>
                         </a>
                         <a href="https://github.com/SpinelliSantiago/bookstore-ecommerce" target="_blank" class="project_btn">
@@ -300,16 +307,16 @@
 
 <!-----------CONTACT------------>
     <form id="contact-form">
-        <h2>
+        <h2 data-i18n="contact_title">
             CONTACT
         </h2>
 
-            <input id="name" placeholder="Name" type="text" required>
-            <input id="email" placeholder="Email" type="email" required>
+            <input id="name" data-i18n-placeholder="form_name" placeholder="Name" type="text" required>
+            <input id="email" data-i18n-placeholder="form_email" placeholder="Email" type="email" required>
 
-            <textarea id="message" placeholder="Your message" required></textarea>
+            <textarea id="message" data-i18n-placeholder="form_message" placeholder="Your message" required></textarea>
 
-            <button class="open_modal_form" type="submit">
+            <button class="open_modal_form" type="submit" data-i18n="form_send">
                 SEND
             </button>
 
@@ -329,41 +336,41 @@
                     <h5>
                         Santiago
                     </h5>
-                    <h6>
+                    <h6 data-i18n="footer_role">
                         Frontend Developer
                     </h6>
                 </div>
             </div>
 
             <div class="footer_nav">
-                <h5>
+                <h5 data-i18n="footer_links_title">
                     Links
                 </h5>
                 <ul class="footer_links">
                     <li>
                         <span class="highlight">></span>
-                        <a href="#start">Home</a>
+                        <a href="#start" data-i18n="footer_link_home">Home</a>
                     </li>
                     <li>
                         <span class="highlight">></span>
-                        <a href="#about-me">About me</a>
+                        <a href="#about-me" data-i18n="footer_link_about">About me</a>
                     </li>
                     <li>
                         <span class="highlight">></span>
-                        <a href="#projects">Projects</a>
+                        <a href="#projects" data-i18n="footer_link_projects">Projects</a>
                     </li>
                 </ul>
             </div>
 
             <div class="footer_contact" id="contact">
-                <h5>
+                <h5 data-i18n="footer_contact_title">
                     Contact
                 </h5>
                 <ul class="footer_socials">
                     <li>
                         <a href="#">
                             <i class="ri-global-line"></i>
-                            Buenos Aires, Argentina
+                            <span data-i18n="footer_location">Buenos Aires, Argentina</span>
                         </a>
                     </li>
                     <li>
@@ -389,7 +396,7 @@
         </div>
 
         <div class="footer_text">
-            <p> © 2026 Santiago. All rights reserved.</p>
+            <p data-i18n="footer_rights"> © 2026 Santiago. All rights reserved.</p>
         </div>
 
     </footer>

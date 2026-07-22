@@ -15,7 +15,7 @@ html{
 }
 
 body{
-    background: linear-gradient(225deg,#082000,#073523,#011e02, #042a19);
+    background: linear-gradient(225deg,#082000,#073523,#011e02, #042a19,#073523,#082000);
     font-family: "Montserrat", sans-serif;
 }
 
@@ -108,43 +108,23 @@ nav{
     font-size: 20px;
 }
 
-.lang_btn{
+.lang_btn, .cv_btn{
     font-weight: bold;
     cursor: pointer;
     display: flex;
     align-items: center;
     font-size: 16px;
     gap: 10px;
-    padding: 16px 18px;
+    padding: 10px 20px;
     border-radius: 12px;
     background: transparent;
-    border: 1px solid var(--text-light);
+    border: 1px solid var(--text-dark);
     color: var(--text-light);
     transition: 0.2s;
 }
 
-.lang_btn:hover{
-    background: var(--text-light);
-    color: black;
-}
-
-.cv_btn{
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    gap: 10px;
-    padding: 16px 18px;
-    border-radius: 12px;
-    background: transparent;
-    border: 1px solid var(--text-light);
-    color: var(--text-light);
-    transition: 0.2s;
-}
-
-.cv_btn:hover{
-    background: var(--text-light);
+.lang_btn:hover, .cv_btn:hover:hover{
+    background: var(--primary-color);
     color: black;
 }
 
@@ -574,14 +554,16 @@ form button{
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
-    background-color: var(--primary-color);
+    border: 1px solid var(--text-light);
+    background: var(--primary-color);
     color: var(--text-dark);
     transition: 0.1s;
 }
 
 form button:hover{
-    background: var(--primary-color-dark);
-    color: var(--white);
+    border: 1px solid var(--primary-color);
+    background: #111e17;
+    color: var(--primary-color);
 }
 
 /*---------FOOTER---------*/
@@ -993,7 +975,7 @@ form{
 
 header {
     grid-template-columns: repeat(2, 1fr);
-    padding: 160px 0 40px 0;
+    padding: 130px 0 40px 0;
 }
 
 .header_content {

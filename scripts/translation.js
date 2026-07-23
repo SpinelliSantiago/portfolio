@@ -24,13 +24,6 @@ const translations = {
         about_desc_3: "I also have <span class=\"highlight\">B2 level English</span>, which allows me to work comfortably in international settings and access <span class=\"highlight\">technical documentation and resources</span> fluently.",
 
         skills_title: "My skills",
-        skill_html_desc: "Web page structure and semantics.",
-        skill_css_desc: "Modern styling, responsive design, and UI layouts.",
-        skill_js_desc: "Interactivity, logic, and DOM manipulation.",
-        skill_react_desc: "Building reusable components and dynamic user interfaces.",
-        skill_sql_desc: "Queries, databases, and relational modeling.",
-        skill_node_desc: "Backend development, APIs, and server-side JavaScript.",
-        skill_express_desc: "Building servers and APIs for web applications.",
 
         projects_title: "My projects",
         project1_title: "Landing Page / Fuerza Bruta",
@@ -86,13 +79,6 @@ const translations = {
         about_desc_3: "También tengo <span class=\"highlight\">nivel de inglés B2</span>, lo que me permite trabajar cómodamente en entornos internacionales y acceder a <span class=\"highlight\">documentación técnica y recursos</span> con fluidez.",
 
         skills_title: "Mis habilidades",
-        skill_html_desc: "Estructura y semántica de páginas web.",
-        skill_css_desc: "Estilos modernos, diseño responsive y layouts de interfaz.",
-        skill_js_desc: "Interactividad, lógica y manipulación del DOM.",
-        skill_react_desc: "Construcción de componentes reutilizables e interfaces dinámicas.",
-        skill_sql_desc: "Consultas, bases de datos y modelado relacional.",
-        skill_node_desc: "Desarrollo backend, APIs y JavaScript del lado del servidor.",
-        skill_express_desc: "Construcción de servidores y APIs para aplicaciones web.",
 
         projects_title: "Mis proyectos",
         project1_title: "Landing Page / Fuerza Bruta",

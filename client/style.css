@@ -130,7 +130,7 @@ nav {
     cursor: pointer;
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
     gap: 10px;
     padding: 10px 20px;
     border-radius: var(--bradius);
@@ -150,7 +150,7 @@ nav {
 header {
     display: grid;
     margin: auto;
-    padding: 130px 0 40px 0;
+    padding-top: 130px;
     margin-bottom: var(--section-split);
 }
 
@@ -248,13 +248,13 @@ header {
 .about_me {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 80px 60px;
+    padding: 70px 60px;
     margin: auto;
     margin-bottom: var(--section-split);
     border-radius: var(--bradius);
     border: solid 1px var(--text-dark);
     box-shadow: 0 0 8px #20501383;
-    background: #10170a;
+    background: #020e088e;
 }
 
 .about_me_card {
@@ -277,7 +277,7 @@ header {
 
 .about_me_card p {
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 22px;
     color: var(--white);
 }
@@ -294,9 +294,9 @@ header {
     width: 5px;
     height: 100%;
     background: linear-gradient(to bottom,
-            transparent,
-            #103a27,
-            transparent);
+        transparent,
+        #103a27,
+        transparent);
 }
 
 .about_me_description p {
@@ -370,7 +370,7 @@ header {
     border-radius: var(--bradius);
     padding: 40px 0;
     box-shadow: 0 10px 10px -8px #9afa802e;
-    background: #10170a;
+    background: #020e088e;
     transition: 0.2s;
 
     @media (max-width: 768px) {
@@ -384,13 +384,18 @@ header {
 
 .cards img {
     margin: 10px 0;
-    width: 55px;
+    width: 70px;
 }
 
 .cards:hover {
     box-shadow: 0 12px 20px -8px #9afa8083;
     background: rgb(1, 15, 1);
     transform: translateY(-10px);
+}
+
+.cards:hover img {
+    transition: 0.2s ease;
+    transform: scale(1.2);
 }
 
 /*---------PROYECTS---------*/
@@ -425,12 +430,13 @@ header {
     padding: 20px;
     border-radius: var(--bradius);
     box-shadow: 0 0 8px #9afa801d;
-    background: #020e08;
+    background: #020e088e;
     transition: 0.2s;
 }
 
 .project:hover {
     box-shadow: 0 0 8px #071d01;
+    background: #020e08ba;
 }
 
 .project img {
@@ -457,17 +463,17 @@ header {
 
 .project_text {
     width: 100%;
-    margin: 15px 0px;
+    margin: 15px 0;
 }
 
 .project_text h4 {
     font-size: 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     color: var(--primary-color);
 }
 
 .project_text p {
-    font-size: 17px;
+    font-size: 16px;
     color: var(--white);
 }
 
@@ -503,14 +509,14 @@ form {
     padding: 10px 30px;
     border-radius: var(--bradius);
     border: 1px solid var(--primary-color-darker);
-    background: #000000;
+    background: #00000070;
 }
 
 form h2 {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    margin: 50px 0 40px 0;
+    margin: 50px 0 35px 0;
     color: var(--white)
 }
 
@@ -521,14 +527,13 @@ form h2::after {
     height: 1px;
     margin: 25px auto 0;
     background: linear-gradient(to right,
-            transparent,
-            var(--primary-color-dark),
-            transparent);
+        transparent,
+        var(--primary-color-dark),
+        transparent);
 }
 
 form input {
     padding: 10px;
-    margin: 10px 0;
     border: none;
     font-size: 14px;
     border: 1px solid var(--primary-color-darker);
@@ -558,6 +563,7 @@ input:-webkit-autofill {
 }
 
 form textarea {
+    margin-top: 10px;
     padding: 10px;
     border: none;
     font-size: 14px;
@@ -773,10 +779,6 @@ form button:hover {
         display: flex;
     }
 
-    header img {
-        padding-top: 90px;
-    }
-
     .header_image img {
         width: 100%;
         max-width: 90%;
@@ -901,13 +903,13 @@ form button:hover {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .logo h2 {
         font-size: 26px;
     }
 
     nav {
-        padding: 10px 30px;
+        padding: 5px 20px;
     }
 
     .cv_btn {
@@ -918,11 +920,11 @@ form button:hover {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 46px;
+        top: 35px;
         left: 0;
         width: 100%;
         margin-top: 20px;
-        background: #10170a;
+        background: #10170af5;
     }
 
     .nav_links li {
@@ -938,11 +940,11 @@ form button:hover {
     }
 
     .nav_links.active {
-        display: none;
+        display: flex;
     }
 
     header{
-        padding: 100px 0 0 0;
+        padding: 80px 0 0 0;
         margin-bottom: var(--section-split-movile);
     }
 
@@ -1021,11 +1023,15 @@ form button:hover {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
     #menu-btn {
         display: none;
     }
 
+
+}
+
+@media (min-width: 768px) {
     header {
         grid-template-columns: repeat(2, 1fr);
     }

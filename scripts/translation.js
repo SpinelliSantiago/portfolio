@@ -129,7 +129,7 @@ function applyLanguage(lang) {
 
     const btn = document.getElementById('lang-toggle-text');
     if (btn) {
-        btn.textContent = lang === 'en' ? 'ES' : 'EN';
+        btn.textContent = lang === 'en' ? 'ENGLISH' : 'ESPAÑOL';
     }
 
     localStorage.setItem('lang', lang);

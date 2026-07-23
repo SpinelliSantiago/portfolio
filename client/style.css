@@ -7,7 +7,8 @@
     --white: #ffffff;
 
     --bradius: 5px;
-    --section-split: 100px
+    --section-split: 100px;
+    --section-split-movile: 80px;
 }
 
 html {
@@ -25,7 +26,7 @@ main {
     margin: auto;
 
     @media (max-width: 768px) {
-        width: 90%;
+        width: 98%;
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
@@ -149,6 +150,8 @@ nav {
 header {
     display: grid;
     margin: auto;
+    padding: 130px 0 40px 0;
+    margin-bottom: var(--section-split);
 }
 
 .header_image {
@@ -169,7 +172,7 @@ header {
 }
 
 .header_content h1 {
-    font-size: 100px;
+    font-size: 90px;
     font-weight: bold;
     text-align: center;
     color: var(--white);
@@ -177,7 +180,8 @@ header {
 
 .header_content h2 {
     font-size: 50px;
-    font-weight: bold;
+    font-style: italic;
+    font-weight: lighter;
     text-align: center;
     margin: 0 0 10px 0;
     color: var(--primary-color);
@@ -272,8 +276,9 @@ header {
 }
 
 .about_me_card p {
-    font-size: 18px;
-    line-height: 25px;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 22px;
     color: var(--white);
 }
 
@@ -295,8 +300,9 @@ header {
 }
 
 .about_me_description p {
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 19px;
+    line-height: 26px;
+    margin-bottom: 20px;
     color: var(--white);
 }
 
@@ -328,6 +334,28 @@ header {
     margin: auto;
     margin-bottom: var(--section-split);
     gap: 10px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: 0 auto;
+
+        &>*:last-child {
+            grid-column: 1 / -1;
+            width: 180px;
+            margin: 0 auto;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        grid-template-columns: repeat(3, 1fr);
+
+        &>*:last-child {
+            grid-column: 1 / -1;
+            width: 200px;
+            margin: 0 auto;
+        }
+    }
 }
 
 .cards h4 {
@@ -344,6 +372,14 @@ header {
     box-shadow: 0 10px 10px -8px #9afa802e;
     background: #10170a;
     transition: 0.2s;
+
+    @media (max-width: 768px) {
+        padding: 25px 0;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+
+    }
 }
 
 .cards img {
@@ -394,7 +430,7 @@ header {
 }
 
 .project:hover {
-    box-shadow: 0 0 8px #9afa8048;
+    box-shadow: 0 0 8px #071d01;
 }
 
 .project img {
@@ -431,6 +467,7 @@ header {
 }
 
 .project_text p {
+    font-size: 17px;
     color: var(--white);
 }
 
@@ -746,10 +783,13 @@ form button:hover {
         margin: auto;
     }
 
+    .header_content {
+        margin-bottom: var(--section-split-movile);
+    }
+
     .header_content h3 {
         margin-top: 60px;
         max-width: 100%;
-
     }
 
     .header_content h1 {
@@ -781,9 +821,7 @@ form button:hover {
     }
 
     .skills {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 0;
+        margin-bottom: var(--section-split-movile);
     }
 
     .skills_caption h2 {
@@ -802,9 +840,14 @@ form button:hover {
     .about_me {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 30px 20px;
-        width: 90%;
-        margin: auto;
+        width: 95%;
+        padding: 70px 30px;
+        margin-bottom: var(--section-split-movile);
+    }
+
+    .about_me_description {
+        text-align: center;
+        margin-top: 30px;
     }
 
     .about_me_cards::after {
@@ -815,6 +858,7 @@ form button:hover {
         display: grid;
         grid-template-columns: 1fr;
         padding: 0 10px;
+        margin-bottom: var(--section-split-movile);
     }
 
     .project {
@@ -840,6 +884,10 @@ form button:hover {
 
     form {
         width: 90%;
+    }
+
+    form h2{
+        font-size: 24px;
     }
 
     form p {
@@ -893,6 +941,11 @@ form button:hover {
         display: none;
     }
 
+    header{
+        padding: 100px 0 0 0;
+        margin-bottom: var(--section-split-movile);
+    }
+
     .header_image img {
         margin: auto 0px;
         max-width: 90%;
@@ -933,6 +986,7 @@ form button:hover {
         padding: 30px 40px;
         width: 90%;
         margin: auto;
+        margin-bottom: var(--section-split-movile);
     }
 
     .about_me_cards::after {
@@ -941,10 +995,10 @@ form button:hover {
 
     .skills {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         width: 90%;
         margin: auto;
         padding: 0;
+        margin-bottom: var(--section-split-movile);
     }
 
     .skills_caption h2 {
@@ -959,6 +1013,7 @@ form button:hover {
         display: grid;
         grid-template-columns: 1fr;
         padding: 0 10px;
+        margin-bottom: var(--section-split-movile);
     }
 
     form {
@@ -973,7 +1028,6 @@ form button:hover {
 
     header {
         grid-template-columns: repeat(2, 1fr);
-        padding: 130px 0 40px 0;
     }
 
     .header_content {
